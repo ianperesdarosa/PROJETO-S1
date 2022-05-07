@@ -1,0 +1,144 @@
+@charset "UTF-08";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /*background-color: #676F54;*/
+    background: url(/IMG/pexels-oleksandr-tiupa-192136.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+main{
+    background-color: #FFFFFC;
+    border-radius: 12px;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 4px 8px #0000004b;
+}
+form{
+    width: 250px;
+    height: 500px;
+    padding: 12px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: 600;
+
+}
+
+
+
+
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+.inf{
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #00000052;
+}
+.inf:valid{
+    border:  1px solid yellowgreen;
+}
+.inf:invalid{
+    border: 1px solid red;
+    animation: shake 300ms;
+
+}
+.inf::placeholder{
+    font-weight: 600;
+    font-variant: small-caps;
+    color: black;
+
+}
+
+
+
+
+#title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-shadow: 1px 2px 6px #0000003b;
+}
+.btn-sub{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background-color: #676F54;
+    color: white;
+    border: none;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+.btn-sub:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    font-size: 1.4em;
+    width: 120px;
+    height: 45px;
+    
+}
+.space-t,block{
+    margin-top: 35px;
+    display: block;
+
+}
+#pic{
+    background-color: #241E4E;
+    border-radius: 0px 12px 12px 0px;
+    width: 350px;
+    height: 500px;
+    padding-right: 100px;
+}
+#icons{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 180px;
+    margin: auto;
+    margin-top: 50px;
+}
+.ico{
+    width: 130%;
+}
+#foxy{
+    display: block;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-35%, -203px);
+}
